@@ -26,7 +26,7 @@ defmodule ContainerApi.Router do
 
     get ("/cpu") do 
         fibo_start = :os.system_time(:seconds)
-        num = fib(30)
+        num = fib(40)
         fibo_end = :os.system_time(:seconds)
         time = fibo_end - fibo_start
         payload = Poison.encode!(%{
